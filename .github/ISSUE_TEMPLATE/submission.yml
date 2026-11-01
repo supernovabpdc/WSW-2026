@@ -1,0 +1,55 @@
+name: Prototype Submission
+description: Submit your team's prototype for the WSW 2026 Hackathon
+title: "[Submission] Team name here"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Data/software prototype:** fill in the GitHub repo link.
+        **CAD model:** fill in the Google Drive link.
+        **Both:** fill in both.
+  - type: input
+    id: team
+    attributes:
+      label: Team name
+    validations:
+      required: true
+  - type: textarea
+    id: members
+    attributes:
+      label: Team members (names only, one per line)
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Submission type
+      options:
+        - Data / software prototype
+        - CAD model
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Project title
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Short summary (2 to 3 lines)
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repo link (data/software prototypes)
+      description: Public repo with a README explaining the project and how to run it.
+      placeholder: https://github.com/your-username/your-project
+  - type: input
+    id: cad
+    attributes:
+      label: Google Drive link (CAD models)
+      description: Folder
