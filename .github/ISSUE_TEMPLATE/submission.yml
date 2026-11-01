@@ -52,4 +52,18 @@ body:
     id: cad
     attributes:
       label: Google Drive link (CAD models)
-      description: Folder
+      description: Folder with your CAD files and a few renders or screenshots. Set sharing to Anyone with the link can view.
+      placeholder: https://drive.google.com/...
+  - type: input
+    id: demo
+    attributes:
+      label: Demo video or walkthrough link (optional)
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have filled in the link for our submission type and checked that it opens without signing in
+          required: true
+        - label: We will not edit our repo or Drive files after the submission deadline
+          required: true
